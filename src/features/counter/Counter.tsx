@@ -10,6 +10,7 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
+import './styles.scss'
 
 export function Counter() {
   const count = useAppSelector(selectCount);
@@ -19,7 +20,7 @@ export function Counter() {
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div>
+    <div id='countersote'>
       <div className={styles.row}>
         <button
           className={styles.button}

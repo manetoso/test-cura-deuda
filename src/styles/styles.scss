@@ -1,0 +1,29 @@
+@import './base/base';
+@import './base/settings';
+
+// Components
+@import './components/navigation';
+@import './components/pokemonList';
+@import './components/pokemonInfo';
+@import './components/search';
+
+.container {
+    padding: 1rem;
+
+    @media ( min-width: $screen-md ) {
+        padding-left: calc( 100vw / 20 );
+        padding-right: calc( 100vw / 20 );
+    }
+    @media ( min-width: $screen-xl ) {
+        padding-left: calc( 100vw / 20 );
+        padding-right: calc( 100vw / 20 );
+    }
+    @media ( min-width: $screen-2xl ) {
+        padding-left: calc( 100vw / 20 );
+        padding-right: calc( 100vw / 20 );
+    }
+    @media ( min-width: $screen-3xl ) {
+        padding-left: calc( 100vw / 5 );
+        padding-right: calc( 100vw / 5 );
+    }
+}

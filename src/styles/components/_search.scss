@@ -1,0 +1,62 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    
+    &-title {
+        padding-bottom: 1rem;
+    }
+
+    &-form {
+        display: grid;
+        grid-template-columns: 80% 20%;
+
+        &-input {
+            padding: 0.5rem;
+            border-radius: 0.5rem 0 0 0.5rem;
+            border-color: $slate-900;
+            border-width: 2px;
+            border-style: solid;
+        }
+        &-button {
+            padding: 0.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            border-color: $slate-900 $slate-900 $slate-900 transparent;
+            border-width: 2px 2px 2px 0;
+            border-style: solid;
+            background-color: transparent;
+            color: $slate-900;
+            font-weight: bold;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $yellow;
+                border-color: transparent;
+                transform: scale(0.99);
+            }
+        }
+
+        @media ( min-width: $screen-md ) {
+            grid-template-columns: 90% 10%;
+        }
+    }
+
+    &-msg {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-weight: bold;
+        color: white;
+        border-radius: 0.5rem;
+        background-color: $blue;
+        
+        &.not-founded {
+            background-color: $red;
+        }
+        &.founded {
+            background-color: $green;
+        }
+    }
+}
+
+
